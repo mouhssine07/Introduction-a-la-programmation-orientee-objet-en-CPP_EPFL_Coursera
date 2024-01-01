@@ -4,9 +4,6 @@ using namespace std;
 
 class Souris
 {
-    /*****************************************************
-      Compléter le code à partir d'ici
-    *******************************************************/
 private:
     double poids;
     string couleur;
@@ -14,7 +11,6 @@ private:
     unsigned int esperance_vie;
     bool clonee = false;
 public:
-    //Constructeur
     Souris(double p,string c, unsigned int a = 0 , unsigned int ev = 36) : poids(p), couleur(c),age(a),esperance_vie(ev)
     {cout << "Une nouvelle souris !" << endl; }
 
@@ -55,18 +51,15 @@ public:
     }
 
     ~Souris() { cout << "Fin d'une souris..." << endl; }
-    /*******************************************
-     * Ne rien modifier après cette ligne.
-     *******************************************/
 
-}; // fin de la classe Souris
+
+};
 
 int main()
 {
     Souris s1(50.0, "blanche", 2);
     Souris s2(45.0, "grise");
     Souris s3(s2);
-    // ... un tableau peut-être...
     s1.afficher();
     s2.afficher();
     s3.afficher();
